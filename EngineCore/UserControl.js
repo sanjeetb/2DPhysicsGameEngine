@@ -8,7 +8,8 @@ keycode = event.keyCode;
 else if (event.which) { // Netscape/Firefox/Opera
 keycode = event.which;
 }
-
+else
+    keycode = event.which;
 var width = gEngine.Core.mWidth;
 var height = gEngine.Core.mHeight;
 var context = gEngine.Core.mContext;
