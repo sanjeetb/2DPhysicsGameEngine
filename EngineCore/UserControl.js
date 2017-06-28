@@ -1,18 +1,15 @@
 function userControl(event) {
 var keycode;
-}
-
+var width = gEngine.Core.mWidth;
+var height = gEngine.Core.mHeight;
+var context = gEngine.Core.mContext;
+    
 if (window.event) { // IE
 keycode = event.keyCode;
 }
 else if (event.which) { // Netscape/Firefox/Opera
 keycode = event.which;
 }
-else
-    keycode = event.which;
-var width = gEngine.Core.mWidth;
-var height = gEngine.Core.mHeight;
-var context = gEngine.Core.mContext;
 
 if (keycode === 70) { //f
 //create new Rectangle at random position
@@ -36,3 +33,7 @@ Math.random() * 30 + 10, 0, Math.PI * 2, true);
 context.closePath();
 context.stroke();
 }
+    
+}
+
+
